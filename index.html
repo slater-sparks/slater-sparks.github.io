@@ -6,12 +6,12 @@
     h1 {
       font-family: 'Georgia', serif;
       font-size: 36px;
-      color: gray; 
+      color: gray;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #000; 
+      background-color: #000;
       padding: 20px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 1000;
@@ -19,9 +19,15 @@
     p {
       font-family: 'Verdana', sans-serif;
       font-size: 18px;
-      color: gray; 
+      color: gray;
       text-decoration: underline;
-      margin-top: 100px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: zoom-in; 
+      cursor: zoom-in;
+      transform: scale(2);
     }
     .snow {
       position: fixed;
@@ -32,9 +38,6 @@
       pointer-events: none;
       z-index: -1; 
       background-image: url('https://media.tenor.com/88dnH_mHRLAAAAAM/static-tv-static.gif');
-    }
-    body {
-      cursor: zoom-in;
     }
   </style>
 </head>
