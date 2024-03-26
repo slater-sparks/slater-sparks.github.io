@@ -17,14 +17,20 @@
 
             if  (i <= 0) {
                 countobj.innerHTML = "<b><font size='+10'>BOOM!</b>";
-                document.body.style.backgroundColor = 'rgb(255, 0, 0)';;
-            } else {
-                var redValue = Math.floor(255 - (i * 51));
-                var greenValue = 0;
-                var blueValue = 0; 
-
-                document.body.style.backgroundColor = 'rgb(' + redValue + ',' + greenValue + ',' + blueValue + ')';
-        }
+                document.body.style.backgroundColor = '#FF0000';
+            } 
+            if (i = 4){
+                document.body.style.backgroundColor = '#FFDED7';
+            }
+            if (i = 3){
+                document.body.style.backgroundColor = '#FFBAAB';
+            }
+            if (i = 2){
+                document.body.style.backgroundColor = '#FF856B';
+            }
+            if (i = 1){
+                document.body.style.backgroundColor = '#FF6646 ';
+            }
       }
 
       function resetCount() {
@@ -33,7 +39,7 @@
             countobj.innerHTML = "<b>" + i + "</b>";
             document.body.style.backgroundColor = 'white';
         }
-        
+
     </script>
 </body>
 </html>
