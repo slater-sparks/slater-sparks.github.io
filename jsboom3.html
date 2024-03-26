@@ -16,17 +16,6 @@
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
 
-        function resetCount() {
-            i = 5;
-            countobj = document.getElementById("count");
-            countobj.innerHTML = "<b>" + i + "</b>";
-            document.body.style.backgroundColor = 'white';
-        }
-
-        function setCountToZero() {
-            i = 0;
-        }
-
             if  (i <= 0) {
                 countobj.innerHTML = "<b><font size='+10'>BOOM!</b>";
                 document.body.style.backgroundColor = '#FF0000';
@@ -44,6 +33,17 @@
                 document.body.style.backgroundColor = '#FF6646 ';
             }
       }
+
+      function resetCount() {
+            i = 5;
+            countobj = document.getElementById("count");
+            countobj.innerHTML = "<b>" + i + "</b>";
+            document.body.style.backgroundColor = 'white';
+        }
+
+        function setCountToZero() {
+            i = 0;
+        }
 
     </script>
 </body>
